@@ -30,7 +30,7 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(primarySwatch: Colors.orange),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("Number Paginator Example"),
+          title: const Text("Number Paginator"),
         ),
         body: Column(
           children: [
