@@ -49,14 +49,19 @@ class _MyAppState extends State<MyApp> {
                 },
               ),
             ),
-            NumberPaginator(
-              initialPage: _currentPage,
-              numberPages: (items.length / _numPerPage).ceil(),
-              onPageChange: (int index) {
-                setState(() {
-                  _currentPage = index;
-                });
-              },
+            Column(
+              children: [
+                NumberPaginator(
+                  initialPage: _currentPage,
+                  numberPages: (items.length / _numPerPage).ceil(),
+                  onPageChange: (int index) {
+                    setState(() {
+                      _currentPage = index;
+                    });
+                  },
+                ),
+                const SizedBox(height: 20),
+              ],
             ),
           ],
         ),
